@@ -1,0 +1,22 @@
+  2  docker
+    3  docker images
+    4  sudo usermod -aG docker $USER
+    5  docker images
+    6  sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+    7  docker images
+    8  sudo chmod g+rwx "$HOME/.docker" -R
+    9  docker images
+   10  clear
+   11  kubectl get contexts
+   12  kubectl config get-contexts
+
+   13  docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure jenkins/jenkins:lts-jdk17
+
+   14  docekr ps
+   15  docker ps
+   16  docker logs 1e6246ae582e
+   17  hostname -i
+   18  hostname -A
+   19  hostname
+   20  hostname -I
+   21  history
